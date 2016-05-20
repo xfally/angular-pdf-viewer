@@ -40,6 +40,7 @@ The URL, request headers, scale and delegate-handle can be set using the attribu
     headers="{ 'x-you-know-whats-awesome': 'EVERYTHING' }"></pdf-viewer>
 ```
 
+Init `scale="page-fit"` if you want to open pdf-viewer with "fit page width".
 
 ## Delegate Service (pdfDelegate)
 
@@ -57,6 +58,7 @@ The following methods are available to the delegate:
 - zoomIn(amount) *default amount = 0.2*
 - zoomOut(amount) *default amount = 0.2*
 - zoomTo(amount)
+- fit *(fit page width)*
 - rotate *(clockwise by 90 degrees)*
 - getPageCount
 - getCurrentPage
